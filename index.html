@@ -90,13 +90,40 @@
         </aside>
 
         <main class="content">
+            <style>
+                @media (max-width: 900px) {
+                    .hero-quote-section {
+                        flex-direction: column !important;
+                        justify-content: center !important;
+                        text-align: center !important;
+                        gap: 15px !important;
+                    }
+
+                    .hero-quote-section .quote-text {
+                        text-align: center !important;
+                        white-space: normal !important;
+                        /* Telefonda sığmazsa alt satıra geçmesine izin ver */
+                    }
+
+                    .sidebar .profile-container {
+                        text-align: center;
+                        /* Kendi etrafında ortalatmak için */
+                        align-items: center;
+                    }
+
+                    .sidebar .contact-info {
+                        align-items: center;
+                        /* İletişim simgelerini de ortala */
+                    }
+                }
+            </style>
             <section class="hero-quote-section"
-                style="display: flex; align-items: center; justify-content: flex-end; gap: 20px; margin-bottom: 2rem;">
-                <div class="quote-text" style="text-align: right; white-space: nowrap;">
+                style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 20px; margin-bottom: 2rem;">
+                <div class="quote-text" style="text-align: right;">
                     <p
                         style="font-family: var(--font-serif); font-size: 1.1rem; font-style: italic; color: var(--text-secondary); margin-bottom: 0.2rem;">
                         "Vatanını en çok seven, görevini en iyi yapandır."</p>
-                    <span style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary);">- M. Kemal
+                    <span style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary);">- Mustafa Kemal
                         Atatürk</span>
                 </div>
                 <img src="assets/herfabrikabirkaledir.jpg" alt="Her Fabrika Bir Kaledir"
@@ -116,7 +143,7 @@
                         bağımsız bir firmada Elektrik-Elektronik mühendisi olarak çalışmaktayım. Ayrıca EKİPNET Yetki
                         Belgesi'ne ve bakanlıkta ilgili kayda sahibim.</p>
                     <p>Edindiğim tecrübelerle, bugüne kadar pek çok farklı durum ve güvenlik ihtiyacı kapsamında
-                        başarıyla danışmanlık yaptım.</p>
+                        danışmanlık yaptım.</p>
                 </div>
 
                 <h3
